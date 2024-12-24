@@ -19,6 +19,23 @@ const RootLayout = ({ children }) => {
             {children}
           </main>
         </Provider>
+        <p
+          style={{
+            marginTop: "auto",
+            textAlign: "center",
+            color: "var(--color-light--1)",
+          }}
+        >
+          &copy;
+          <a
+            className="twitter-link cursor-pointer"
+            target="_blank"
+            href="https://my-portfolio-bala.vercel.app/"
+          >
+            <b>Bala.E</b>
+          </a>
+          . Done in India with love ♥.
+        </p>
       </body>
     </html>
   );
