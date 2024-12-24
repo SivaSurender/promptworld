@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Form from "@components/Form";
 import { get } from "mongoose";
 
-function EditPrompt() {
+function UpdatePrompt() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const promptId = searchParams.get("id");
