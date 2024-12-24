@@ -64,7 +64,7 @@ function EditPrompt() {
 
 const EditPrompt = () => {
   return (
-    <Suspense>
+    <Suspense fallback={null}>
       <UpdatePrompt />
     </Suspense>
   );
