@@ -52,16 +52,22 @@ function EditPrompt() {
   };
 
   return (
-    <Suspense>
-      <Form
-        type="Edit"
-        post={post}
-        setPost={setPost}
-        submitting={submitting}
-        handleSubmit={updatePrompt}
-      ></Form>
-    </Suspense>
+    <Form
+      type="Edit"
+      post={post}
+      setPost={setPost}
+      submitting={submitting}
+      handleSubmit={updatePrompt}
+    ></Form>
   );
 }
+
+const EditPrompt = () => {
+  return (
+    <Suspense>
+      <UpdatePrompt />
+    </Suspense>
+  );
+};
 
 export default EditPrompt;
