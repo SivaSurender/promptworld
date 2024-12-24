@@ -22,13 +22,13 @@ const Feed = () => {
   const [prompts, setPrompts] = useState([]);
   const handleSearchChange = (e) => {};
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchPrompts = async () => {
       const response = await fetch("/api/prompt");
       const data = await response.json();
 
       setPrompts(data);
     };
-    fetchPosts();
+    fetchPrompts();
   }, []);
   return (
     <section className="feed">
